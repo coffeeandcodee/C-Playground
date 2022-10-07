@@ -2,7 +2,7 @@
 using namespace std;
 
 //"Variable swap" program to illustrate passby value & passby reference applications.
-//We wish to simply swap values to two values
+//We wish to simply swap values to two values.
 
 void incorrect_solution1(int a, int b){
     a = b; 
