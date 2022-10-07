@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     
     string alphabet {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-    string   key    {"ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvtsrqponmlkjihgfedcba"};
+    string   key    {"ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba"};
     
     string message{}, encryption{""};
     cout <<"Provide string: "; 
