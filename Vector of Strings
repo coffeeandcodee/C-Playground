@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//Simple string vector "creation" and display, illustrating function use and passby reference
+void print(vector <string> &v);
+void insert(vector <string> &v);
+
+int main() {
+
+    vector <string> vec {};
+    insert(vec);
+    
+    //Without the passby reference use, "print(vec)" returns empty vector
+    print(vec);
+    
+    return 0;
+}
+
+void insert(vector <string> &v){
+     cout << "How many elements? ";
+    int elements{};
+    cin >> elements;
+    
+    cin.ignore();
+    //this removes newline from input buffer
+    
+    for(int i{1}; i <= elements; i++){
+        cout << "Enter string " << i << ": ";
+        string e{""};
+        getline(cin, e);
+        v.push_back(e);
+    }
+    
+    
+}
+
+
+void print(vector <string> &v){
+    for(auto s: v)
+        cout << s << " ";
+}
